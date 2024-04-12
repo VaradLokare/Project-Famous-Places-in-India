@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #00224D;
+        }
+        header {
+            background-color: #FF204E;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #FF204E;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background-color: #FF204E;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #5D0E41;
+        }
+        .image-text-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-text-block .text {
+            flex: 1;
+            padding-right: 20px;
+            color: #fff;
+        }
+        .image-text-block .text h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .image-text-block img {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .container-1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #A0153E;
+        }
+        .image-text-block-1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+        .image-text-block-1 .text-1 {
+            flex: 1;
+            padding-left: 20px;
+            color: #fff;
+        }
+        .image-text-block-1 .text-1 h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .image-text-block-1 img {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 20px;
+        }
+        .container-2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #5D0E41;
+        }
+        .image-text-block-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-text-block-2 .text-2 {
+            flex: 1;
+            padding-right: 20px;
+            color: #fff;
+        }
+        .image-text-block-2 .text-2 h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .image-text-block-2 img {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .container-3 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #A0153E;
+        }
+        .image-text-block-3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+        .image-text-block-3 .text-3 {
+            flex: 1;
+            padding-left: 20px;
+            color: #fff;
+        }
+        .image-text-block-3 .text-3 h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .image-text-block-3 img {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 20px;
+        }
+        .container-4 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #5D0E41;
+            border-radius: 20px;
+        }
+        .image-text-block-4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-text-block-4 .text-4 {
+            flex: 1;
+            padding-right: 20px;
+            color: #fff;
+        }
+        .image-text-block-4 .text-4 h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .image-text-block-4 img {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .animated-button {
+    background-color: #FF204E;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color:  #00224D;
+    border-radius: 50%;
+    transition: all 1s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.animated-button:hover::before {
+    width: 0;
+    height: 0;
+    transition: all 1s ease-out;
+}
+
+.animated-button:hover {
+    background-color:  #00224D;
+}
+
+.animated-button:active {
+    background-color: #00224D;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Some Importanat Cities</h1>
+    </header>
+   
+    <div class="container">
+        <div class="image-text-block">
+            <div class="text">
+                <h2>Delhi</h2>
+                <a class="animated-button"  href="https://www.google.com/maps/place/Delhi/@28.6442874,76.7635689,10z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902!16zL20vMDlmMDc?entry=ttu">Learn More</a>
+                <p>Delhi, India's capital, epitomizes a fusion of ancient history and modernity. With its majestic Mughal-era monuments like the Red Fort and Jama Masjid alongside
+                     colonial relics such as India Gate, the city showcases a rich tapestry of architectural marvels. Despite its historical charm, Delhi thrives as a dynamic
+                      metropolis, boasting a bustling economy, state-of-the-art infrastructure like the Delhi Metro, and a vibrant cultural scene. However, it grapples with pressing
+                      challenges like air pollution, yet remains a beacon of opportunity as the political, educational, and economic nucleus of the nation. From its diverse population
+                       to its eclectic cuisine and bustling markets, Delhi's allure lies in its ability to seamlessly blend tradition with modernity, attracting visitors from around
+                        the world to experience its captivating essence.
+                </p>
+            </div>
+            <img src="https://i.pinimg.com/564x/33/bf/86/33bf8683d067a5dda77a5ddf0d4e3b01.jpg" alt="Example Image" style="border-radius: 20px;">
+        </div>
+    </div>
+<br>
+    <div class="container-1">
+        <div class="image-text-block-1">
+            <img src="https://i.pinimg.com/236x/a9/4b/ae/a94baeb7f2342c7e13b97b314eff9cac.jpg" alt="Example Image">
+            <div class="text-1">
+                <h2>Mumbai</h2>
+                <a class="animated-button" href="https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.082502,72.7163719,11z/data=!3m1!4b1!4m6!3m5!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559!16zL20vMDR2bXA?entry=ttu">Learn More</a>
+                <p>Mumbai, the bustling metropolis on India's western coast, is a dynamic tapestry of history, commerce, and culture. From the majestic Gateway of India overlooking
+                     the Arabian Sea to the colonial-era architecture of the Chhatrapati Shivaji Maharaj Terminus, the city bears the imprints of its rich past. Yet, Mumbai is more
+                      than just a relic of history; it pulsates with the energy of a modern-day megacity, boasting a thriving economy, towering skyscrapers, and a world-class
+                       transportation network, including the iconic Mumbai local trains. Despite its rapid development, Mumbai faces challenges such as overcrowding and infrastructure
+                        strains, but its resilience shines through in the spirit of its people and the dynamism of its entrepreneurial landscape. As the financial capital of India,
+                         Mumbai serves as a magnet for dreams and aspirations, drawing individuals from across the country seeking opportunities in its bustling streets and sprawling
+                          suburbs. From the bustling markets of Colaba and Bandra to the glitz of Bollywood and the serene beaches of Juhu, Mumbai's eclectic charm is irresistible,
+                           offering a unique blend of tradition and modernity that captivates visitors and residents alike.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+     <div class="container-2">
+        <div class="image-text-block-2">
+            <div class="text-2">
+                <h2>Kolkata</h2>
+                <a class="animated-button" href="https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5355649,88.2649506,12z/data=!3m1!4b1!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895!16zL20vMGN2dzk?entry=ttu">Learn More</a>
+                <p>Kolkata, nestled along the banks of the Hooghly River in eastern India, is a city steeped in history and culture. From the iconic Victoria Memorial, a symbol
+                 of the city's colonial past, to the majestic Howrah Bridge spanning the river, Kolkata's architectural landscape reflects its rich heritage. Yet, Kolkata is not
+                  merely a relic of bygone eras; it is a vibrant hub of activity and progress. As the cultural capital of India, Kolkata pulsates with creativity, seen in its 
+                  literary festivals, classical music concerts, and vibrant street art. Despite facing challenges like urban congestion and infrastructure limitations, Kolkata's 
+                  resilience shines through in the warmth and spirit of its people, known for their love of literature, politics, and football. As a major commercial and educational
+                   center, Kolkata offers a plethora of opportunities, attracting students, professionals, and artists alike. Whether strolling through the historic lanes of North 
+                   Kolkata, savoring the flavors of its street food, or experiencing the fervor of Durga Puja celebrations, Kolkata's unique blend of tradition and modernity leaves
+                    an indelible mark on all who visit, making it a captivating destination rich in character and charm.
+                </p>
+            </div>
+            <img src="https://i.pinimg.com/236x/1b/77/7e/1b777e641ab3f0fb11f23c8d48381199.jpg" alt="Example Image" style="border-radius: 20px;">
+        </div>
+    </div>
+    <br>
+    <div class="container-3">
+        <div class="image-text-block-3">
+            <img src="https://i.pinimg.com/236x/d0/cf/20/d0cf202d1fbcd909af0a1ab5cf0cd84a.jpg" alt="Example Image">
+            <div class="text-3">
+                <h2>Bangalore</h2>
+                <a class="animated-button" href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9544595,77.3012695,10z/data=!3m1!4b1!4m6!3m5!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627!16zL20vMDljMTc?entry=ttu">Learn More</a>
+                <p>Bangalore, nestled in the heart of Karnataka's Deccan Plateau, is a city where the echoes of tradition harmonize with the rhythms of modernity. From the majestic
+                    Vidhana Soudha, an emblem of the city's governance, to the iconic Lalbagh Botanical Garden, Bangalore's landscape is adorned with a blend of historical landmarks
+                     and lush green spaces. However, Bangalore is more than just a testament to its past; it thrives as India's Silicon Valley, a global hub for technology and 
+                     innovation. With its booming IT industry, world-class educational institutions, and vibrant startup ecosystem, Bangalore beckons entrepreneurs, tech enthusiasts,
+                      and dreamers from around the world. Despite grappling with challenges like traffic congestion and urban sprawl, Bangalore's spirit remains resilient, reflected
+                       in its cosmopolitan culture and dynamic arts scene. Whether exploring the bustling streets of Commercial Street, savoring the diverse culinary delights of 
+                       Indiranagar, or unwinding amidst the serene lakes of the city, Bangalore's charm lies in its ability to seamlessly blend tradition with progress, making it 
+                       a captivating destination for seekers of opportunity and adventure alike.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-4">
+        <div class="image-text-block-4">
+            <div class="text-4">
+                <h2>Hyderabad</h2>
+                <a class="animated-button" href="https://www.google.com/maps/place/Hyderabad,+Telangana/@17.4126086,78.2432311,11z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!8m2!3d17.406498!4d78.4772439!16zL20vMDljNnc?entry=ttu">Learn More</a>
+                <p>Hyderabad, nestled along the banks of the Musi River in southern India, is a city where history intertwines with modernity to create a captivating tapestry.
+                     From the iconic Charminar, an emblem of the city's cultural heritage, to the majestic Golconda Fort, Hyderabad's skyline is punctuated by architectural marvels 
+                     that narrate tales of its glorious past. However, Hyderabad is not merely a relic of history; it stands as a thriving center of commerce, technology, and culture.
+                      As home to the booming IT industry, prestigious educational institutions like Osmania University, and a vibrant arts scene, Hyderabad beckons innovators,
+                       scholars, and artists from far and wide. Despite facing challenges such as rapid urbanization and water scarcity, Hyderabad's resilience shines through in 
+                       the warmth of its people and the richness of its traditions. Whether wandering through the bustling lanes of Charminar's bazaars, indulging in the aromatic
+                       flavors of Hyderabadi cuisine, or marveling at the modern skyline of HITEC City, Hyderabad's allure lies in its seamless fusion of tradition and progress, 
+                       making it a city that both honors its past and embraces its future with open arms.
+                </p>
+            </div>
+            <img src="https://i.pinimg.com/236x/d8/e6/73/d8e6739a0d77fb88c8fae851f4f20616.jpg" style="border-radius: 20px;">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
